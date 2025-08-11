@@ -16,7 +16,7 @@ const Footer = () => {
             return classNames.footer();
         }
 
-        return "flex items-center justify-end pb-2.5 pt-3 border-t border-gray-300 dark:border-gray-700";
+        return "flex items-center justify-end pb-2.5 pt-3 border-t border-neutral-300 dark:border-neutral-700";
     }, [classNames]);
 
     return (

@@ -390,7 +390,7 @@ const Datepicker = (props: DatepickerType) => {
     ]);
 
     const containerClassNameOverload = useMemo(() => {
-        const defaultContainerClassName = "relative w-full text-gray-700";
+        const defaultContainerClassName = "relative w-full text-neutral-700";
         return typeof containerClassName === "function"
             ? containerClassName(defaultContainerClassName)
             : typeof containerClassName === "string" && containerClassName !== ""
@@ -416,7 +416,7 @@ const Datepicker = (props: DatepickerType) => {
                 <div className={popupClassNameOverload} ref={calendarContainerRef}>
                     <Arrow ref={arrowRef} />
 
-                    <div className="mt-2.5 shadow-sm border border-gray-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg">
+                    <div className="mt-2.5 shadow-sm border border-neutral-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg">
                         <div className="flex flex-col lg:flex-row py-2">
                             {showShortcuts && <Shortcuts />}
 

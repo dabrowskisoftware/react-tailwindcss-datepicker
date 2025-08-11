@@ -186,7 +186,7 @@ const Days = (props: Props) => {
                     isDateDisabled(day) && "line-through"
                 );
             }
-            return cn(baseClass, isDateDisabled(day) && "line-through", "text-gray-400");
+            return cn(baseClass, isDateDisabled(day) && "line-through", "text-neutral-400");
         },
         [activeDateData, hoverClassByDay, isDateDisabled]
     );

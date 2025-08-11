@@ -29,7 +29,7 @@ const ItemTemplate = memo((props: ItemTemplateProps) => {
     const getClassName = useCallback(() => {
         const textColor = TEXT_COLOR["600"][primaryColor as keyof (typeof TEXT_COLOR)["600"]];
         const textColorHover = TEXT_COLOR.hover[primaryColor as keyof typeof TEXT_COLOR.hover];
-        return `whitespace-nowrap w-1/2 md:w-1/3 lg:w-auto transition-all duration-300 hover:bg-gray-100 dark:hover:bg-white/10 p-2 rounded cursor-pointer ${textColor} ${textColorHover}`;
+        return `whitespace-nowrap w-1/2 md:w-1/3 lg:w-auto transition-all duration-300 hover:bg-neutral-100 dark:hover:bg-white/10 p-2 rounded cursor-pointer ${textColor} ${textColorHover}`;
     }, [primaryColor]);
 
     const chosePeriod = useCallback(
@@ -136,7 +136,7 @@ const Shortcuts = () => {
     }, []);
 
     return shortcutOptions?.length ? (
-        <div className="md:border-b mb-3 lg:mb-0 lg:border-r lg:border-b-0 border-gray-300 dark:border-gray-700 pr-1">
+        <div className="md:border-b mb-3 lg:mb-0 lg:border-r lg:border-b-0 border-neutral-300 dark:border-neutral-700 pr-1">
             <ul className="w-full tracking-wide flex flex-wrap lg:flex-col pb-1 lg:pb-0">
                 {shortcutOptions.map(([key, item], index) =>
                     Array.isArray(item) ? (
