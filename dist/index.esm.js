@@ -1935,7 +1935,7 @@ const Input = () => {
         }
         const border = BORDER_COLOR.focus[primaryColor];
         const ring = RING_COLOR["second-focus"][primaryColor];
-        const defaultInputClassName = `relative transition-all duration-300 py-2.5 pl-4 pr-14 w-full border-neutral-300 dark:bg-slate-800 dark:text-white/80 dark:border-slate-600 rounded-lg tracking-wide font-light text-sm placeholder-neutral-400 bg-white focus:ring disabled:opacity-40 disabled:cursor-not-allowed ${border} ${ring}`;
+        const defaultInputClassName = `relative transition-all duration-300 py-2.5 pl-4 pr-14 w-full border-neutral-300 dark:bg-neutral-800 dark:text-white/80 dark:border-neutral-600 rounded-lg tracking-wide font-light text-sm placeholder-neutral-400 bg-white focus:ring disabled:opacity-40 disabled:cursor-not-allowed ${border} ${ring}`;
         return typeof inputClassName === "function"
             ? inputClassName(defaultInputClassName)
             : typeof inputClassName === "string" && inputClassName !== ""
@@ -2263,7 +2263,7 @@ function useOnClickOutside(ref, handler) {
 }
 
 const Arrow = forwardRef((props, ref) => {
-    return (jsxRuntimeExports.jsx("div", { ...props, ref: ref, className: "absolute z-20 h-4 w-4 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-neutral-300 bg-white dark:bg-slate-800 dark:border-slate-600" }));
+    return (jsxRuntimeExports.jsx("div", { ...props, ref: ref, className: "absolute z-20 h-4 w-4 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-neutral-300 bg-white dark:bg-neutral-800 dark:border-neutral-600" }));
 });
 Arrow.displayName = "Arrow";
 
@@ -2548,7 +2548,7 @@ const Datepicker = (props) => {
                 ? popupClassName
                 : defaultPopupClassName;
     }, [popupClassName]);
-    return (jsxRuntimeExports.jsx(DatepickerContext.Provider, { value: contextValues, children: jsxRuntimeExports.jsxs("div", { className: containerClassNameOverload, ref: containerRef, children: [jsxRuntimeExports.jsx(Input, {}), jsxRuntimeExports.jsxs("div", { className: popupClassNameOverload, ref: calendarContainerRef, children: [jsxRuntimeExports.jsx(Arrow, { ref: arrowRef }), jsxRuntimeExports.jsxs("div", { className: "mt-2.5 shadow-sm border border-neutral-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg", children: [jsxRuntimeExports.jsxs("div", { className: "flex flex-col lg:flex-row py-2", children: [showShortcuts && jsxRuntimeExports.jsx(Shortcuts, {}), jsxRuntimeExports.jsxs("div", { className: `flex items-stretch flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-1.5 ${showShortcuts ? "md:pl-2" : "md:pl-1"} pr-2 lg:pr-1`, children: [jsxRuntimeExports.jsx(Calendar, { date: firstDate, onClickPrevious: previousMonthFirst, onClickNext: nextMonthFirst, changeMonth: changeFirstMonth, changeYear: changeFirstYear, minDate: minDate, maxDate: maxDate }), useRange && (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsx("div", { className: "flex items-center", children: jsxRuntimeExports.jsx(VerticalDash, {}) }), jsxRuntimeExports.jsx(Calendar, { date: secondDate, onClickPrevious: previousMonthSecond, onClickNext: nextMonthSecond, changeMonth: changeSecondMonth, changeYear: changeSecondYear, minDate: minDate, maxDate: maxDate })] }))] })] }), showFooter && jsxRuntimeExports.jsx(Footer, {})] })] })] }) }));
+    return (jsxRuntimeExports.jsx(DatepickerContext.Provider, { value: contextValues, children: jsxRuntimeExports.jsxs("div", { className: containerClassNameOverload, ref: containerRef, children: [jsxRuntimeExports.jsx(Input, {}), jsxRuntimeExports.jsxs("div", { className: popupClassNameOverload, ref: calendarContainerRef, children: [jsxRuntimeExports.jsx(Arrow, { ref: arrowRef }), jsxRuntimeExports.jsxs("div", { className: "mt-2.5 shadow-sm border border-neutral-300 px-1 py-0.5 bg-white dark:bg-neutral-800 dark:text-white dark:border-neutral-600 rounded-lg", children: [jsxRuntimeExports.jsxs("div", { className: "flex flex-col lg:flex-row py-2", children: [showShortcuts && jsxRuntimeExports.jsx(Shortcuts, {}), jsxRuntimeExports.jsxs("div", { className: `flex items-stretch flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-1.5 ${showShortcuts ? "md:pl-2" : "md:pl-1"} pr-2 lg:pr-1`, children: [jsxRuntimeExports.jsx(Calendar, { date: firstDate, onClickPrevious: previousMonthFirst, onClickNext: nextMonthFirst, changeMonth: changeFirstMonth, changeYear: changeFirstYear, minDate: minDate, maxDate: maxDate }), useRange && (jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [jsxRuntimeExports.jsx("div", { className: "flex items-center", children: jsxRuntimeExports.jsx(VerticalDash, {}) }), jsxRuntimeExports.jsx(Calendar, { date: secondDate, onClickPrevious: previousMonthSecond, onClickNext: nextMonthSecond, changeMonth: changeSecondMonth, changeYear: changeSecondYear, minDate: minDate, maxDate: maxDate })] }))] })] }), showFooter && jsxRuntimeExports.jsx(Footer, {})] })] })] }) }));
 };
 
 var af$2 = {exports: {}};
